@@ -1,0 +1,105 @@
+.GameContainer {
+  position: relative;
+  padding: 0 100px;
+  margin: 50px auto;
+}
+
+.animating {
+  animation: animateGameCont 0.5s forwards;
+}
+@keyframes animateGameCont {
+  0% {
+    transform: translateY(300px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.GameContainer p {
+  font-weight: 600;
+  font-size: 25px;
+}
+.slick-track {
+  display: flex;
+  height: 500px;
+  align-items: center;
+}
+.slick-track .slick-slide {
+  position: relative;
+  margin-top: 50px;
+}
+
+.GameContainer .control-btn-next {
+  position: absolute;
+  right: 7px;
+  top: 50px;
+
+  width: 70px;
+  height: 254px;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 99;
+  border-radius: 15px;
+}
+.GameContainer .control-btn-prev {
+  position: absolute;
+  left: 7px;
+  top: 50px;
+  z-index: 99;
+  width: 70px;
+  height: 254px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 15px;
+}
+.GameContainer .control-btn-next .next {
+  position: absolute;
+  right: 8px;
+
+  top: 40%;
+  background: none;
+  color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-color: #fff;
+}
+.GameContainer .control-btn-next:hover button {
+  color: gray;
+  border-color: black;
+}
+.GameContainer .control-btn-prev:hover button {
+  color: gray;
+  border-color: black;
+}
+
+.GameContainer .control-btn-prev .prev {
+  position: absolute;
+  left: 8px;
+  z-index: 99;
+  top: 40%;
+  background: none;
+  color: #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-color: #fff;
+}
