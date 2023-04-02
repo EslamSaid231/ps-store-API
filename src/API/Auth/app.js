@@ -1,6 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const authRoutes = require("./routes/auth");
+const cartStore = require("./routes/CartData");
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.use((req, res, next) => {
 });
 
 app.use(authRoutes);
-
+app.use(cartStore);
 app.use((error, req, res, next) => {
   const status = error.status || 500;
   const message = error.message || "Something went wrong.";

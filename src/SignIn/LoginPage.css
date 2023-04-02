@@ -8,7 +8,7 @@
   position: absolute;
   z-index: 99;
   left: 30vw;
-  top: 20vh;
+  top: 18vh;
   margin: 0 0px;
   background-color: #fff;
   display: flex;
@@ -18,8 +18,11 @@
   border-radius: 15px;
   color: black;
 }
+.errorMsg {
+  margin-left: 32px;
+}
 .form-inputs {
-  height: 50vh;
+  height: 55vh;
   padding: 5px;
   width: 38vw;
   left: 15px;

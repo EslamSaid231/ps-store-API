@@ -79,7 +79,7 @@ const LoginPage = () => {
               ))}
             </ul>
           )}
-          {data && data.message && <p>{data.message}</p>}
+          {data && data.message && <p className="errorMsg">{data.message}</p>}
           <label htmlFor="email" className="email">
             Email:
           </label>

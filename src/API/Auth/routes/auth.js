@@ -43,7 +43,7 @@ router.post("/signup", async (req, res, next) => {
   }
 });
 
-router.post("/login", async (req, res) => {
+router.post("/login", async (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
 
@@ -65,6 +65,7 @@ router.post("/login", async (req, res) => {
 
   const token = createJSONToken(email);
   res.json({ token });
+  next();
 });
 
 module.exports = router;
